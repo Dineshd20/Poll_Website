@@ -1,4 +1,4 @@
-# Poll_Website ( IN-PROGRESS) 
+# Full Stack: Poll_Website ( IN-PROGRESS) 
 
 ## A user-friendly interface for posting polls and voting, with proper form validations with multiple languages and using databases to retrieve and query data. In addition,  utilizing  Jquery and Ajax to update data in real time. 
 
