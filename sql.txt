@@ -1,0 +1,46 @@
+CREATE TABLE Users(
+
+UserId int NOT NULL AUTO_INCREMENT,
+UserName varchar(20) NOT NULL,
+Email   varchar(30) NOT NULL,
+Password varchar(11) NOT NULL, 
+Avator int NOT NULL,
+PRIMARY KEY (UserId),
+)
+
+
+
+CREATE TABLE Polls (
+PollId int NOT NULL,
+Question varchar(40) NOT NULL,
+UserId   int NOT NULL,
+StartDate Datetime,
+EndDate Datetime,
+PRIMARY KEY (PollId),
+FOREIGN KEY (UserId) REFERENCES Users(UserId)
+);
+
+CREATE TABLE PollOptions (
+PollId int NOT NULL,
+OptionId int NOT NULL,
+Option1 varchar(30) NOT NULL,
+Option2 varchar(30) NOT NULL,
+Option3 varchar(30) NOT NULL,
+Option4 varchar(30) NOT NULL,
+PRIMARY KEY (PollId, OptionId),
+FOREIGN KEY (PollId) REFERENCES PollId(Polls)
+);
+
+
+CREATE TABLE Votes (
+UserId int NOT NULL,
+OptionId int NOT NULL,
+PollId int NOT NULL,
+
+PRIMARY KEY (PollId, OptionId),
+FOREIGN KEY (PollId) REFERENCES PollId(Polls),
+FOREIGN KEY (UserId) REFERENCES UserId(User),
+FOREIGN KEY (OptionId) REFERENCES PollOptions(OptionId),
+
+
+);

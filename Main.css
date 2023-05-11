@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'
+);
+
+
+
+/* pools page*/
+.grid{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.grid1{
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+
+.grid3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+/*//////////////////////////////////////*/
+/*  Create Poll*/
+.section{
+
+    text-align: center;
+}
+#CreatePollForm{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+/*my polls.html*/
+.hi{
+    font-weight: 300;
+    padding: 2%;
+    border-bottom: 2px dashed #5AF9F1;
+}
+#RecentMyPoll{
+    float: right;
+    width: 30%;
+    text-align: center;
+}
+.myPolls{
+    float: left;
+    width: 55%;
+    text-align: center;
+
+}
+/* Account file: change password in account file*/
+
+.userInfo{
+    width: 50%;
+    text-align: center;
+    background-color: rgba(255, 235, 205, 0.541) ;
+    border: 2px dashed wheat;
+    border-radius: 10px;
+    font-family: "Fira sans",sans-serif;
+
+
+
+}
+#show_info{
+   visibility: hidden;
+    text-align: center;
+    padding: 3%;
+    width: 50%;
+    position:absolute;
+    left: 25%;
+   
+}
+#change_accountBtn{
+    border:none;
+   /* background-color: blanchedalmond;*/
+   color: rgb(255, 255, 255);
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    word-spacing: 3px;
+    background-image: linear-gradient(to right, rgb(231, 152, 152), 
+    rgba(255,0,0,1));
+    cursor: pointer;
+
+  
+
+
+}
+#change_accountBtn:hover{
+
+  /*  background-image: linear-gradient(to left, rgba(255,0,0,0), 
+    rgba(255,0,0,0.6));*/
+    background-image: linear-gradient(to left, rgb(231, 152, 152), 
+    rgba(255,0,0,1));
+}
+
+#change_accountBtn span{
+    width: 300px;
+    height: 40px;
+    position: relative;
+    transition: 0.5s;
+}
+#change_accountBtn span:after{
+   content: "\2193";
+  /* content: '\00bb';*/
+
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#change_accountBtn:hover span{
+    padding-right: 25px;
+    transition: 0.5s;
+
+}
+
+#change_accountBtn:hover span:after{
+    opacity: 1;
+    right: 0;
+
+}
+
+
+
+/*//////////////////////////////////////////*/
+
+* {
+    
+    padding: 0%;
+    margin: 0%;
+  /*  font-family: "Fira sans",sans-serif;*/
+  font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+.err_msg{
+   padding: 3px;
+    margin: 0;
+    color:rgb(250, 141, 141);
+    font-family: 'Lato', sans-serif ;
+    position: inherit;
+    font: 9px;
+    
+    
+    line-height: 0;
+}
+.name{
+    float: left;
+    font-family: 'Lato', monospace;
+    font-size: 15px;
+}
+
+h1{
+    font-weight: 300;
+    padding: 12%;
+    
+    border-bottom: 2px dashed #5AF9F1;
+  
+}
+
+
+/* Set */
+
+
+
+/* login in */
+.main-info{
+    float: left;
+    flex: 2;
+    padding-top: 2%;
+    font-size: x-large;
+   position: relative;
+}
+#Mainpic{
+    position:absolute;
+    width: 100%;
+    left: -0%;
+    height: 100%;
+    top:45%;
+    bottom: 0px;
+}
+
+#signForm{
+    float: right;
+    flex: 1; 
+    padding-top: 2%;
+
+}
+.signin{
+   margin: 5px;
+    padding: 2%;
+text-align: center;
+ line-height: 2;
+}
+.box {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    margin: 5px;
+    text-align: center;
+}
+/*//////////////////////////////////*/
+
+/* signUp page */
+
+
+@keyframes SlideRight {
+    0%{
+        transform: translateX(+500px);
+    }
+  
+
+}
+@keyframes SlideLeft {
+    0%{
+        transform: translateX(-200px);
+    }
+}
+
+.signupbody{
+    display: flex;  
+    gap: 40px;
+}
+
+/* left side*/
+#cont-pic{
+    flex: 1;
+    padding-top: 2%;
+    position: relative;
+    text-align: center; 
+    animation: SlideLeft 1s ease-in-out; 
+}
+#singuppic {
+  
+    position: absolute;
+    width: 100%;
+    left: -0%;
+    height: 75%;
+    bottom: 10px;
+   
+}
+
+/* form   (Right side)*/
+#signupForm{
+    flex: 2;
+    text-align: center; 
+    position: relative;
+    animation: SlideRight 0.7s ease-in-out;
+
+}
+.signup{
+position: inherit;
+    left: 10%;
+    
+  padding: 3px;
+    margin: 2%;
+    width: 75%;
+  align-items: center;
+    text-align: center;
+    
+    
+}
+/*/////////////////////////////////////////////////*/
+
+
+/* main button for submiting #5AF9F1*/
+
+.submitbtn{
+    width: 300px;
+    height: 40px;
+margin-top: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #9cfbf7;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+ 
+    transition: 0.4s;
+    transition-property: transform;
+
+}
+.submitbtn:hover{
+
+    transform: translateY(-5px);
+    background-color: #5AF9F1;
+
+}
+
+
+/* styling login and singup input fields*/
+input[type=username], input[type=password],input[type=email],input[type=text] {
+    padding: 12px 20px;
+   margin: 8px 0;
+    width: 75%;
+    
+    background-color: rgb(245, 243, 243);
+    box-sizing: border-box;
+    border: none;
+    transition: width 0.5s;
+    border-bottom: solid white;
+    letter-spacing: 3px;
+    
+
+  
+  }
+  
+  input[type=username]:focus, input[type=password]:focus,input[type=email]:focus,input[type=text]:focus{
+    outline: none;
+    border-bottom: solid #5AF9F1;
+    width: 100%;
+    
+
+
+
+ }
+
+ @media only screen and (max-width:700px)
+{
+
+    /*  Create Poll*/
+.section{
+
+    text-align: center;
+}
+#CreatePollForm{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+/*//////////////////////////////////////////*/
+/* login in */
+.main-info{
+    
+    padding-top: 2%;
+    font-size: x-large;
+    position: relative;
+    animation: SlideLeft 1s ease-in-out; 
+}
+#Mainpic{
+  visibility: hidden;
+}
+
+#signForm{
+    padding-top: 2%;
+    width: 100%;
+    animation: SlideRight 0.7s ease-in-out;
+}
+.signin{
+    margin: 5px;
+    padding: 2%;
+    text-align: center;
+    line-height: 2;  
+}
+
+/*//////////////////////////////////////////*/
+
+/* sign up*/
+
+.signupbody{
+    display: inline-block;  
+}
+
+
+/* left side*/
+.data{  
+    padding-top: 2%;
+    position: relative;
+    text-align: center; 
+    animation: SlideLeft 1s ease-in-out; 
+}
+#singuppic{
+    visibility: hidden;
+}
+
+@keyframes SlideRight {
+    0%{
+        transform: translateX(+500px);
+    }
+  
+
+}
+@keyframes SlideLeft {
+    0%{
+        transform: translatey(-200px);
+    }
+}
+/* form   (Right side)*/
+#signupForm{
+    text-align: center; 
+    position: relative;
+    animation: SlideRight 0.7s ease-in-out;
+}
+.signup{
+position: inherit;
+    left: 10%; 
+  padding: 3px;
+    margin: 2%;
+    width: 75%;
+  align-items: center;
+ text-align: center;   
+}
+/*///////////////////////////////////*/
+
+
+.box {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    margin: 5px;
+    text-align: center;
+}
+
+h1{
+    font-weight: 300;
+    padding: 2%;
+    border-bottom: 2px dashed #5AF9F1;
+}
+
+/* main button for submiting #5AF9F1*/
+
+.submitbtn{
+    width: 300px;
+    height: 40px;
+margin-top: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #9cfbf7;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+ 
+    transition: 0.4s;
+    transition-property: transform;
+
+}
+.submitbtn:hover{
+
+    transform: translateY(-5px);
+    background-color: #5AF9F1;
+
+}
+
+/* styling login and singup input fields*/
+input[type=username], input[type=password],input[type=email],input[type=text] {
+    padding: 12px 20px;
+   margin: 8px 0;
+    width: 75%;
+    
+    background-color: rgb(245, 243, 243);
+    box-sizing: border-box;
+    border: none;
+    transition: width 0.5s;
+    border-bottom: solid white;
+    letter-spacing: 3px;
+    
+
+  
+  }
+  
+  input[type=username]:focus, input[type=password]:focus,input[type=email]:focus,input[type=text]:focus{
+    outline: none;
+    border-bottom: solid #5AF9F1;
+    width: 100%;
+    
+
+
+
+ }
+
+
+
+
+
+}
